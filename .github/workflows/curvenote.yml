@@ -27,7 +27,7 @@ jobs:
             run: |
                 python -m pip install --upgrade pip
                 pip install nodeenv
-                npm install -g npm@latest
+                pip install npm
 
           - name: Deploy Curvenote Site
             uses: curvenote/action-deploy@v1

@@ -1,0 +1,14 @@
+version: 1
+project:
+  title: Space Hardware Handbook Test
+  github: https://github.com/sfrinaldi/spacehardwarehandbook-public-test
+  id: a84f01f3-a0d3-4455-ad0e-91cde70d7d4b
+site:
+  title: Space Hardware Handbook Test
+  options:
+    logo_text: Space Hardware Handbook Test
+  nav: []
+  actions:
+    - title: Learn More
+      url: https://curvenote.com/docs/web
+  domains: []

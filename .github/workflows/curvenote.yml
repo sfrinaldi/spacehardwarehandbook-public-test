@@ -1,0 +1,22 @@
+# For generating a site via CurveNote from GitHub Repo
+
+name: Curvenote Publishing
+
+on: 
+    pull_request:
+        branches: ['main']
+    push:
+        branches: ['main']
+
+permissions:
+    contents: read
+    pull-requests: write
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Deploy Curvenote Site
+            uses: curvenote/action-deploy@v1
+            env:
+                CURVENOTE_TOKEN: ${{ secrets.CURVENOTE_TOKEN }}

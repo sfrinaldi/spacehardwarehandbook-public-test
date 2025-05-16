@@ -21,7 +21,10 @@ jobs:
           
           - name: Test install
             run: | 
-              sudo apt install node
+              sudo apt-get update
+              sudo apt install npm
+              node -v
+              npm -v
                 
           - name: Deploy Curvenote Site
             uses: curvenote/action-deploy@v1

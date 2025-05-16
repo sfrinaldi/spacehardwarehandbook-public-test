@@ -18,6 +18,10 @@ jobs:
         steps:
           - name: Checkout Repository
             uses: actions/checkout@v3
+          
+          - name: Test install
+            run: | 
+              sudo npm install -g npm@latest
                 
           - name: Deploy Curvenote Site
             uses: curvenote/action-deploy@v1
